@@ -39,6 +39,7 @@ public class BookCatalog {
             if(bookUnAvailable.equals(books[i])) {
                 books[i].setAvailable(false);
                 result = i;
+                break;
             }
         }
         
