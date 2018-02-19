@@ -27,13 +27,14 @@ public class EmployeeTest {
         System.out.println();
         System.out.println(std.getSignature());
         System.out.println("------------------------");
-        Person [] persons = new Person[5];
+        Object [] persons = new Person[5];
         persons[0] = new Employee("bill");
         persons[1] = new Student("hong", Student.Status.junior);
         persons[2] = new Student("korn", Student.Status.sophomore);
         persons[3] = new Staff("tiny", "infra");
         persons[4] = new Employee("john");
-        for(Person temp:persons) System.out.println(temp+"\n");
+        for(Object temp:persons) System.out.println(temp+"\n");
+        System.out.println(persons[0] instanceof Employee);
     }
     @Test
     public void setNameToEmployee() {
