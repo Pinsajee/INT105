@@ -33,4 +33,15 @@ public class Circle extends Shape {
         return "Circle " + "Radius: " + radius + "\t" + "Area: " + this.getArea() + super.toString();
     }
     
-}
+    public boolean equals(Object obj) {
+        boolean result = false;
+        if (obj != null && obj instanceof Circle) {
+            if (this.radius == ((Circle) obj).getRadius()) {
+                result = true;
+            }
+        }
+        return result;
+    }
+    
+
+    }
