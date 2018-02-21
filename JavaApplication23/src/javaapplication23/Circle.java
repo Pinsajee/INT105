@@ -1,5 +1,5 @@
 package javaapplication23;
-public class Circle extends Shape {
+public final class Circle extends Shape {
     private double radius;
 
 
@@ -44,6 +44,9 @@ public class Circle extends Shape {
         }
         return result;
     }
+//    public String getColor() {
+//        return "AAA";
+//    }
     
 
     }

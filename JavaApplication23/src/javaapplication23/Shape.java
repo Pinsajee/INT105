@@ -6,7 +6,7 @@ public abstract class Shape {
         this.color = color;
     }
 
-    public String getColor() {
+    public final String getColor() {
         return color;
     }
     
