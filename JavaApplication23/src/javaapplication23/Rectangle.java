@@ -22,7 +22,8 @@ public class Rectangle extends Shape {
 
     @Override
     public String toString() {
-        return "Rectangle " + " width: " + width + "\t high: "  + high + "\t area: " + this.getArea() + "\t" + super.toString();
+        return "Rectangle " + " Width: " + width + "\t " + "High: "  + high + "\t" + "Area: " + "\t" + this.getArea() + "\t" + super.toString();
+                
     }
     
 }

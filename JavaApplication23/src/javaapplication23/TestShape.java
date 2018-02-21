@@ -6,5 +6,8 @@ public class TestShape {
         Shape shape02 = new Rectangle(10 , 20);
         System.out.println(shape01.toString());
         System.out.println(shape02.toString());
+        
+        Circle temp = (Circle)shape01;
+        System.out.println(temp.getArea());
     } 
 }
