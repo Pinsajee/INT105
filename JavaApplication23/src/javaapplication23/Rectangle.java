@@ -35,5 +35,10 @@ public class Rectangle extends Shape {
         return "Rectangle " + " Width: " + width + "\t " + "High: "  + high + "\t" + "Area: " + "\t" + this.getArea() + "\t" + super.toString();
                 
     }
+
+    @Override
+    public double getPerimeter() {
+       return 2 * (this.high + this.width);
+    }
     
 }
