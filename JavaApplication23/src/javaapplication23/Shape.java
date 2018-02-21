@@ -1,5 +1,5 @@
 package javaapplication23;
-public class Shape {
+public abstract class Shape {
     private String color;
     
     public Shape(String color) {
@@ -9,6 +9,8 @@ public class Shape {
     public String getColor() {
         return color;
     }
+    
+    public abstract double getArea();
 
 
     @Override
