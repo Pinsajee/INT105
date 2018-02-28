@@ -1,20 +1,23 @@
 package javaapplication23;
-public class Rectangle extends Shape {
+
+public class Rectangle extends Shape implements ColorAble {
+
     private double width;
     private double high;
+    private String color;
 
     public Rectangle(double width, double high) {
         super("White");
         this.width = width;
         this.high = high;
     }
-    
-    
-    public Rectangle(String color , double width , double high) {
-        super(color);
+
+    public Rectangle(String color, double width, double high) {
+        super("White");
         this.width = width;
         this.high = high;
     }
+
     public double getArea() {
         return this.high * this.width;
     }
@@ -29,15 +32,26 @@ public class Rectangle extends Shape {
         }
         return result;
     }
+
     @Override
     public String toString() {
-        return "Rectangle " + " Width: " + width + "\t " + "High: "  + high + "\t" + "Area: " + "\t" + this.getArea() + "\t" + super.toString();
-                
+        return "Rectangle " + " Width: " + width + "\t " + "High: " + high + "\t" + "Area: " + "\t" + this.getArea() + "\t" + super.toString();
+
     }
 
     @Override
     public double getPerimeter() {
-       return 2 * (this.high + this.width);
+        return 2 * (this.high + this.width);
     }
-   
+
+    @Override
+    public String getColor() {
+        return this.color;
+    }
+
+    @Override
+    public void fillColor(String color) {
+        this.color = color;
+    }
+
 }
