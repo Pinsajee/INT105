@@ -1,5 +1,4 @@
 package javaapplication23;
-
 public class Rectangle extends Shape {
     private double width;
     private double high;
@@ -40,5 +39,5 @@ public class Rectangle extends Shape {
     public double getPerimeter() {
        return 2 * (this.high + this.width);
     }
-    
+   
 }
